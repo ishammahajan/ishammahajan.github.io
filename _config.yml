@@ -1,17 +1,22 @@
-title                     : Isham
+locale                    : "en-US"
+title                     : "Isham's blog"
+title_separator           : "|"
+name                      : "Isham Mahajan"
 email                     : mahajan.isham@gmail.com
+url                       : 'https://ishammahajan.github.io'
+repository                : "ishammahajan/ishammahajan.github.io"
 
 description               : >-
 
-baseurl                   : ''
-url                       : 'https://ishammahajan.github.io'
 
 twitter_username          : isham_mahajan
 github_username           : ishammahajan
 
 markdown                  : kramdown
+search                    : true
 remote_theme              : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin     : "dark"
+permalink                 : /:categories/:title/
 
 plugins                   :
   - jekyll-feed
