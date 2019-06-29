@@ -17,13 +17,18 @@ search                    : true
 remote_theme              : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin     : "dark"
 permalink                 : /:categories/:title/
+breadcrumbs               : true
 
 plugins                   :
   - jekyll-feed
   - jekyll-include-cache
-defaults:
+defaults                  :
   - scope                 :
       path                : ''
       type                : posts
-    values:
+    values                :
       layout              : single
+      author_profile      : true
+      read_time           : true
+      share               : true
+      related             : true
