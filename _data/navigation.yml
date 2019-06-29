@@ -1,3 +1,7 @@
 main:
+  - title:  "Posts"
+    url:    /categories/index
   - title:  "Blog Zero"
     url:    /misc/blog-zero
+  - title:  "About"
+    url:    /about/index
