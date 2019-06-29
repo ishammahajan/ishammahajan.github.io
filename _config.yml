@@ -32,3 +32,19 @@ defaults                  :
       read_time           : true
       share               : true
       related             : true
+
+author                    :
+  name                    : "Isham Mahajan"
+  avatar                  : "/assets/images/bio-photo.jpg"
+  bio                     : "I try to create."
+  location                : "Manipal | Thane"
+  links                   :
+    - label               : "GitHub"
+      icon                : "fab fa-fw fa-github"
+      url                 : "https://www.github.com/ishammahajan"
+    - label               : "Instagram"
+      icon                : "fab fa-fw fa-instagram"
+      url                 : "https://www.instagram.com/_.isham_/"
+    - label               : "WhatsApp"
+      icon                : "fab fa-fw fa-whatsapp"
+      url                 : "https:wa.me/8618375066"
