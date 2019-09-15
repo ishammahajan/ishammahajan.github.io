@@ -1,12 +1,9 @@
 ---
 title: Source Control Management Concepts
-layout: single
-author_profile: true
-read_time: true
-share: true
-related: true
-categories: Technical
-toc: true
+layout: post
+date: '2019-09-10 15:51:01 +0530'
+categories: blogs
+author: Regex Events
 ---
 
 So the first question you might have regarding source/version control is - what is it, and why is it used? To answer that, consider this scenario. I, developer A, wants to communicate with developer B with respect to a particular piece of code or even an entire project. It could be some collaboration ranging from just discussing how the architecture of the code could be improved, or it could be just developers collaborating on adding some features to the app -- normal incremental development stuff. How would these developers go about doing that?
@@ -33,17 +30,17 @@ Here, I will introduce to you something called a `commit` in git terminology. A 
 - Details of the person who committed it to the repository -- this point is slightly advanced, so don't worry if you don't understand it at this point. It will be explained later on.
 - It's actual structure can perhaps be drawn like this, naively. 
 
-<img src="/assets/images/git-3-commit-structure.png" style="display: block; margin: auto;" />
+<img src="/git-3-commit-structure.png" style="display: block; margin: auto;" />
 
 ## Commit History
 
 A commit forms the building block of something known as the commit history. I will be representing the commit in the following manner. 
 
-<img src="/assets/images/git-1-commit-reference.png" style="display: block; margin: auto;" /> 
+<img src="/git-1-commit-reference.png" style="display: block; margin: auto;" /> 
 
 and the commit history like this. 
 
-<img src="/assets/images/git-2-commit-history.png" style="display: block; margin: auto;" />
+<img src="/git-2-commit-history.png" style="display: block; margin: auto;" />
 
 A commit history is essentially commits stacked together in order to represent a code repository's state at one moment in time. If that doesn't make sense, you can try imagining stacking commits on top of each other such that the changes they represent get applied to the previous state of the commit history (huge array of commits), which if thought about recursively, will end in the initial commit in the history. The implication of this fact is that the entire repository rests on one single initial commit, which colloquially is called the `init commit`. If it still doesn't make sense, don't worry, it will probably be much clearer after the next few paragraphs.
 
@@ -51,7 +48,7 @@ A commit history is essentially commits stacked together in order to represent a
 
 You will now begin to see the benefit of using commits in version control. In git, there is a feature called `branches` which is mandatory usage for most git version control repositories. A branch could be considered 'a fork in the commit history', where for every branch there exists a unique commit history. Let's say we're on a branch B1 and we switch to B2. When we do this, the state of the repository in our folder changes from the commit history of B1 to that of B2. 
 
-<img src="/assets/images/git-4-branch-example.png" style="display: block; margin: auto;" />
+<img src="/git-4-branch-example.png" style="display: block; margin: auto;" />
 
 So, our localised commit history through which we got the state of our files changes from 1 --> 2 --> 3 to 1 --> 2 --> 4 --> 5 (can be thought as commit 1 being made as the `init commit`, on which commit 2 is applied, on which 4 is applied, etc).
 
